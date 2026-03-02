@@ -1,0 +1,205 @@
+body {
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: auto;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+    font-size: 1rem;
+    line-height: 1.6;
+    max-width: auto;
+    color: #ffffff;
+    background-color: black;
+    text-align: center;
+}
+
+header {
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+main{
+    background: radial-gradient(circle at top, rgba(246, 244, 244, 0.15), transparent 70%);
+}
+
+.University_Heart {
+    text-decoration: underline;
+    text-decoration-color: crimson;
+    text-decoration-thickness: auto;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.University_Heart,
+li {
+    display: inline-block;
+    font-size: 15px;
+    padding: 10px;
+}
+
+.Quote {
+    font-style: italic;
+}
+
+figure{
+    width: fit-content;
+    margin: 0 auto;
+    text-align: center;
+}
+
+img{
+    width: 100%;
+    height: auto;
+    display: inline-block;
+}
+
+figcaption{
+    font-style: italic;
+    font-weight: bold;
+    margin-top: 6px;
+    background-color: crimson;
+}
+
+.TimeLine_Display {
+    list-style-type: disc;
+}
+
+.TimeLine {
+    display: flex;
+    color: white
+}
+
+.TimeLine::marker {
+    content: "~";
+}
+
+h4 {
+    text-decoration: underline;
+    text-decoration-color: crimson;
+    text-decoration-thickness: auto;
+
+}
+
+.Services_Display {
+    list-style-type: disc;
+
+}
+
+.Services {
+    display: flex;
+    color: #ffffff;
+}
+
+.Services::marker {
+    content: "-"
+}
+
+button {
+    background-color: crimson;
+    color: black;
+    padding: 0.4rem 1rem;
+    border: none;
+    border-radius: 6px;
+
+    display: inline-block;
+    align-self: center;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: white;
+    color: black;
+    box-shadow: 0 8px 16px 0 rgba(red, green, blue, alpha);
+    cursor: alias
+}
+
+.Learn_Container {
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    /* forces all boxes to stay on one line */
+    justify-content: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.Learn_Box {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+
+    border: 1px solid crimson;
+    border-radius: 16px;
+    margin: 16px;
+    margin-right: 5px;
+    padding: .5rem;
+
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+
+    width: 250px;
+    /* or 300px if you want bigger boxes */
+}
+
+.pillow {
+    border: 1px solid crimson;
+    border-radius: 4px;
+    margin: auto;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    padding: 5px;
+    width: 150px;
+}
+
+footer {
+    font-size: .9rem;
+}
+
+address {
+    font-style: normal;
+}
+
+.how-to-find-them a {
+    color: #ffffff;
+}
+
+a:visited {
+    color: crimson;
+}
+
+a:hover {
+    color: crimson;
+}
+
+a:active {
+    color: crimson
+}
+
+ul.TimeLine_Display {
+    list-style-type: disc !important;
+    list-style-position: center !important;
+    margin-left: 3% !important;
+    padding-left: auto !important;
+    text-align: left;
+}
+
+ul.TimeLine_Display li {
+    display: list-item !important;
+}
+
+ul.Services_Display {
+    list-style-type: disc !important;
+    list-style-position: center !important;
+    margin-left: 3% !important;
+    padding-left: auto !important;
+    text-align: center;
+}
+
+ul.Services_Display li {
+    display: list-item !important;
+}
