@@ -72,6 +72,7 @@ figcaption{
 
 .TimeLine {
     display: flex;
+    flex-direction: column;
     color: white
 }
 
@@ -88,11 +89,14 @@ h4 {
 
 .Services_Display {
     list-style-type: disc;
+    padding: 1rem;
+    overflow-wrap: break-word;
 
 }
 
 .Services {
     display: flex;
+    flex-direction: column;
     color: #ffffff;
 }
 
@@ -120,13 +124,19 @@ button:hover{
 }
 
 .Learn_Container {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr;
     gap: 1.5rem;
-    flex-wrap: wrap;
-    /* forces all boxes to stay on one line */
-    justify-content: center;
     margin-top: 2rem;
     margin-bottom: 2rem;
+}
+
+@media (min-width: 800px) {
+    .Learn_Container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;        
+    }    
 }
 
 .Learn_Box {
@@ -138,12 +148,13 @@ button:hover{
     margin-right: 5px;
     padding: .5rem;
 
-    display: flex;
-    flex-direction: column;
-    gap: 0.75rem;
-
-    width: 250px;
-    /* or 300px if you want bigger boxes */
+    max-width: 100%;
+    box-sizing: border-box;
+}
+.Learn_Box img{
+    max-width: 100%;
+    height: auto;
+    display: block;
 }
 
 .pillow {
